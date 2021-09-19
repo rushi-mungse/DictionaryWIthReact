@@ -1,0 +1,156 @@
+.container {
+  height: calc(100vh - 70px);
+}
+.homeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border: 2px solid #d9138a;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 5rem;
+}
+.homeWrap h2 {
+  color: #12a4d9;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.inputWrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.inputWrap input {
+  border: 2px solid #e2d810;
+  outline: none;
+  color: #322e2f;
+  padding: 5px;
+  background: #e2d810;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+}
+.inputWrap button {
+  border: none;
+  background: #e2d810;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  color: #322e2f;
+  cursor: pointer;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.inputWrap button:hover {
+  background: #e2d81095;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.data {
+  display: flex;
+  flex-direction: column;
+}
+.data .def {
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wordNotFound {
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  margin-bottom: 20px;
+}
+.suggest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+.suggetionBox {
+  color: #fff;
+  padding: 2px;
+  margin: 2px 5px;
+  border-radius: 2px;
+  background: #e2d810;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media  only screen and (max-width:532px) and (min-width:435px)  {
+  .homeWrap h2 {
+    font-size: 25px;
+    font-weight: 400;
+
+  }
+  .homeWrap{
+    border: none;
+    width: 90%;
+  }
+}
+@media  only screen and (max-width:435px) and (min-width:335px)  {
+  .homeWrap h2 {
+    font-size: 25px;
+  }
+  .homeWrap{
+    border: none;
+    width: 90%;
+  }
+  .inputWrap input {
+    width: 60%;
+  }
+}
+@media  only screen and (max-width:335px) and (min-width:300px)  {
+  .homeWrap h2 {
+    font-size: 20px;
+  }
+  .homeWrap{
+    border: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .inputWrap input {
+    width: 60%;
+  }
+  .audio{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media  only screen and (max-width:300px) and (min-width:220px)  {
+  .homeWrap h2 {
+    font-size: 18px;
+  }
+  .homeWrap{
+    border: none;
+    width: 90%;
+    margin: auto;
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .inputWrap{
+    flex-direction: column;
+  }
+  .inputWrap input {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .audio{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
